@@ -40,7 +40,9 @@ $ npm install --save-dev async
 
 ### Day2 Material UI
 
-### 発生したエラー
+* [React × Redux 初心者入門(2日目：Material-UIを実装する)](http://www.hirooooo-lab.com/entry/development/react-redux-materialui)
+
+#### 発生したエラー
 
 最新のmaterial-uiが求めているreactのバージョンが入っていない。  
 本アプリケーションは15.2.1のため必要条件を満たさない。
@@ -62,3 +64,7 @@ npm ERR! peer dep missing: react-dom@^15.4.0-0, required by react-tap-event-plug
 $ npm uninstall --save material-ui react-tap-event-plugin
 $ npm install --save material-ui@0.18.0 react-tap-event-plugin@1.8.0
 ```
+
+### Day3 react-router-reduxでルーティングの実装
+
+* [React × Redux 初心者入門(3日目：react-router-reduxでルーティングを実装する)](http://www.hirooooo-lab.com/entry/development/react-router-redux)

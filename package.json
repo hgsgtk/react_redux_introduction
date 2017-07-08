@@ -5,16 +5,19 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --hot --inline --progress --colors",
+    "start": "webpack-dev-server --hot --inline --progress --colors --history-api-fallback",
     "build": "webpack --progress --colors"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "history": "^4.6.3",
     "material-ui": "^0.18.0",
     "react": "^15.2.1",
     "react-dom": "^15.2.1",
     "react-redux": "^4.4.5",
+    "react-router": "^4.1.1",
+    "react-router-redux": "^4.0.8",
     "react-tap-event-plugin": "^1.0.0",
     "redux": "^3.5.2"
   },

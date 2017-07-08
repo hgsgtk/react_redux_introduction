@@ -2,12 +2,15 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
+import injectTapEventPlugin from 'react-tap-event-plugin';
 
 import App from '../containers/App'
 import configureStore from '../store/configureStore'
 
 // 作成したreducerであるcounter関数を引数に指定してstoreを作成
 const store = configureStore()
+
+injectTapEventPlugin();
 
 ReactDOM.render(
   <Provider store={store}>

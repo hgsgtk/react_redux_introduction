@@ -36,3 +36,29 @@ $ npm install --save-dev async
 ```
 
 上記2点の対応でDay1を完了しました。
+
+
+### Day2 Material UI
+
+### 発生したエラー
+
+最新のmaterial-uiが求めているreactのバージョンが入っていない。  
+本アプリケーションは15.2.1のため必要条件を満たさない。
+
+```
+npm list | grep material                                                          [~/Documents/sourcecode/private/web/react_redux_introduction]
+├─┬ material-ui@0.18.6
+npm ERR! peer dep missing: react@^15.4.0, required by material-ui@0.18.6
+npm ERR! peer dep missing: react@^15.4.0-0, required by react-tap-event-plugin@2.0.1
+npm ERR! peer dep missing: react-dom@^15.4.0, required by material-ui@0.18.6
+npm ERR! peer dep missing: react-dom@^15.4.0-0, required by react-tap-event-plugin@2.0.1
+```
+
+バージョンダウン。
+※react-tap-event-pluginはReactのバージョン別に推奨バージョンの明記が、公式githubにあり。
+[react-tap-event-plugin](https://github.com/zilverline/react-tap-event-plugin)
+
+```
+$ npm uninstall --save material-ui react-tap-event-plugin
+$ npm install --save material-ui@0.18.0 react-tap-event-plugin@1.8.0
+```

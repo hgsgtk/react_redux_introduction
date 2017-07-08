@@ -13,10 +13,11 @@
 教材URLの投稿日が2016年7月、私の作業開始日は2017年7月で1年間空いており、
 バージョンも大きく変わっていました。
 
-この変化により、webpack.config.jsの書き方に違いが在りコンパイルエラーが発生しました。
+この変化により、webpack.config.jsの書き方に違いが在りコンパイルエラーが発生しました。  
 コンパイルエラーに対する対応は、下記のIssue記録を参照になりますが、
-解決にかなりの時間を要しそうだったので、途中からバージョンを合わせてinstallし直す方法に切り替えました。
-[発生した課題と対応記録](https://github.com/KAZUKI1994/react_webpack_modify/issues?q=is%3Aclosed)
+解決にかなりの時間を要しそうだったので、途中からバージョンを合わせてinstallし直す方法に切り替えました。  
+
+* [Issue記録：発生した課題と試行錯誤](https://github.com/KAZUKI1994/react_webpack_modify/issues?q=is%3Aclosed)
 
 #### 実施した対応
 
